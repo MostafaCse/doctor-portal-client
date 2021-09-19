@@ -1,0 +1,15 @@
+.sidebar-container
+{
+    background-color: #1CC7C1;
+    min-height: max-content;
+    color: whitesmoke;
+    padding-left: 8%;
+    padding-top: 110px;
+}
+.linkHighlight{
+ color: whitesmoke;
+ text-decoration: none;
+}
+.linkHighlight:hover{
+    font-size: large;
+}
