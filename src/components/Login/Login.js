@@ -14,7 +14,7 @@ if (!firebase.apps.length) {
 const Login = () => {
 
     var provider = new firebase.auth.GoogleAuthProvider();
-    const [logInUser, setLogInUser] = useContext(doctorContext)
+    const [,setLogInUser] = useContext(doctorContext)
     let history = useHistory();
     let location = useLocation();
     let { from } = location.state || { from: { pathname: "/" } };
@@ -23,28 +23,17 @@ const Login = () => {
         firebase.auth()
             .signInWithPopup(provider)
             .then((result) => {
-                console.log(result.user);
-                var credential = result.credential;
-
-                // This gives you a Google Access Token. You can use it to access the Google API.
-                var token = credential.accessToken;
-                // The signed-in user info.
-                var user = result.user;
-                console.log(result.user.email);
+//var user=result.user;
                 sessionStorage.setItem('email', `${result.user.email}`);
                 setLogInUser(result.user.email);
+                console.log(result.user.email);
                 history.replace(from);
-                // ...
+        
             }).catch((error) => {
-                var errorCode = error.code;
-                var errorMessage = error.message;
-                var email = error.email;
-                var credential = error.credential;
-            
+        console.log(error);
             });
     }
-    //form submit
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit,formState: { errors } } = useForm();
     const onSubmit = data => console.log(data);
     return (
         <div className="row">
@@ -76,7 +65,7 @@ const Login = () => {
                 </center>
             </div>
             <div className="col-md-6">
-                <img style={{ width: '85%' }} className="img-fluid" src={login}></img>
+                <img style={{ width: '85%' }} className="img-fluid" src={login} alt=""></img>
             </div>
         </div>
     );

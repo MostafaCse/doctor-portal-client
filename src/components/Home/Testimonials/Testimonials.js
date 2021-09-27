@@ -37,7 +37,7 @@ const Testimonials = () => {
                     </div>
                 </div>
                 <div className="col-md-6">
-                    <img style={{ opacity: '0.5' }} className="offset-9" src={cavity}></img>
+               <img style={{opacity:'0.5'}} className="offset-9" src={cavity} alt=""></img>
                 </div>
             </section>
             <div style={{marginTop:'8%'}} className="d-flex justify-content-center">

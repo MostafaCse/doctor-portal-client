@@ -8,7 +8,7 @@ import './Sidebar.css';
 
 const Sidebar = () => {
     const [logInUser, setLogInUser] = useContext(doctorContext);
-    const [isDoctor, setIsDoctor] = useState(false);
+    const [,setIsDoctor] = useState(false);
     setLogInUser(sessionStorage.getItem('email'));
     fetch('https://quiet-lake-59398.herokuapp.com/isDoctor', {
         method: 'POST',

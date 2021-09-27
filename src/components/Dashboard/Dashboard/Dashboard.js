@@ -1,16 +1,16 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import AppointmentByDate from '../AppointmentsByDate/AppointmentByDate';
 import Sidebar from '../Sidebar/Sidebar';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import './Dashboard.css';
-import { doctorContext } from '../../../App';
+//import { doctorContext } from '../../../App';
 
 const Dashboard = () => {
-    const [logInUser, setLogInUser] =useContext(doctorContext);
+  // const [logInUser,setLogInUser] =useContext(doctorContext);
     const [selectDate, setSelectDate] = useState(new Date());
     const [appointments, setAppointments] = useState([]);
-console.log(logInUser);
+
     const handleChange = dateTime => {
         const date = dateTime.toDateString()
         setSelectDate(date);
@@ -29,7 +29,7 @@ console.log(logInUser);
             .then(res => res.json())
             .then(result => {
                 setAppointments(result);
-                console.log(result, appointments);
+        
             })
     }, [selectDate])
 

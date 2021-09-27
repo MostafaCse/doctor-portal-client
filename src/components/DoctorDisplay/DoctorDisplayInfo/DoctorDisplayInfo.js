@@ -5,7 +5,7 @@ const DoctorDisplayInfo = ({ item }) => {
         <div className="col-md-4">
             <p>{item.Name}</p>
             <p>{item.Email}</p>
-            <img style={{ height: '200px' }} src={`data:image/png;base64,${item.Img.img}`}></img>
+            <img style={{ height: '200px' }} src={`data:image/png;base64,${item.Img.img}`} alt=""></img>
         </div>
     );
 };

@@ -24,7 +24,7 @@ const AllPatients = () => {
                    {
                        allPatients? <AllPatientsInfo patientsInfo={allPatients}></AllPatientsInfo>:
                        <div style={{textAlign:'center',paddingTop:'50px'}}>
-                       <img src={loadingImage}></img>
+                       <img src={loadingImage} alt=""></img>
                     <h5>Please Wait, Data is Loading</h5>
                 
                 </div>

@@ -7,7 +7,7 @@ const TestimonialsBlog = ({ info }) => {
                 <center> <p style={{marginTop:'8%'}}>{info.description}</p></center>
                 <div style={{marginTop:'20%'}} className="row">
                     <div className="col-md-4">
-                        <img className="offset-2" src={info.img}></img>
+                        <img className="offset-2" src={info.img} alt=""></img>
                     </div>
                     <div className="col-md-8">
                         <h5 style={{ color: '#1CC7C1' }}>{info.name}</h5>

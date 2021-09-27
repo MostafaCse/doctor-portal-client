@@ -16,7 +16,7 @@ const HeaderMain = () => {
                 <button onClick={handleClick} className="btn btn-primary">GET APPOINMENT</button>
             </div>
             <div className="col-md-6">
-                <img src={chair} className="img-fluid"></img>
+                <img src={chair} className="img-fluid" alt=""></img>
             </div>
         </main>
     );

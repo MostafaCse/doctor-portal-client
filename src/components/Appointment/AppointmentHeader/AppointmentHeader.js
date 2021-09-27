@@ -14,7 +14,7 @@ const AppointmentHeader = ({ handleChange }) => {
                 />
             </div>
             <div className="col-md-6">
-                <img src={chair} className="img-fluid"></img>
+                <img src={chair} className="img-fluid" alt=""></img>
             </div>
         </main>
     );

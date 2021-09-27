@@ -6,7 +6,8 @@ const FeatureService = () => {
         <section style={{marginTop:'100px'}} className="d-flex justify-content-center">
             <div className="row w-75">
                 <div className="col-md-6">
-                    <img style={{ height: '95%' }} className="img-fluid" src={dentalCare}></img>
+               
+                <img style={{height:'95%'}} className="img-fluid" src={dentalCare} alt=""></img>
                 </div>
                 <div className="col-md-6 mt-5">
                     <h1 className="mb-5">Exceptional Dental <br />Care, on Your Terms</h1>

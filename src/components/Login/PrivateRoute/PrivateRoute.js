@@ -3,9 +3,9 @@ import { Redirect, Route } from 'react-router-dom/cjs/react-router-dom.min';
 import { doctorContext } from '../../../App';
 
 const PrivateRoute = ({ children, ...rest }) => {
-    const [logInUser, setLogInUser] =useContext(doctorContext)
+    const [logInUser,setLogInUser] =useContext(doctorContext)
     const value=sessionStorage.getItem('email');
-  //  setLogInUser(value);
+    setLogInUser(value);
     return (
         <Route
       {...rest}
