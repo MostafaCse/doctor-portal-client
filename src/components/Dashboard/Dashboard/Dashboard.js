@@ -4,6 +4,7 @@ import Sidebar from '../Sidebar/Sidebar';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import './Dashboard.css';
+import Navbar from '../../Shared/Navbar/Navbar';
 //import { doctorContext } from '../../../App';
 
 const Dashboard = () => {
@@ -35,6 +36,7 @@ const Dashboard = () => {
 
     return (
         <div className="row">
+            <Navbar/>
             <div className="col-md-2">
                 <Sidebar></Sidebar>
             </div>

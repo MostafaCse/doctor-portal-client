@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Sidebar from '../Dashboard/Sidebar/Sidebar';
+import Navbar from '../Shared/Navbar/Navbar';
 
 const AddDoctors = () => {
     const [info, setInfo] = useState({});
@@ -35,6 +36,7 @@ const AddDoctors = () => {
     }
     return (
         <div className="row">
+            <Navbar/>
             <div className="col-md-2">
                 <Sidebar></Sidebar>
             </div>
